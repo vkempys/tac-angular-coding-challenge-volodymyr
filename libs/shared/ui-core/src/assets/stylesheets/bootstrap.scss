@@ -1,0 +1,18 @@
+@import "bootstrap/scss/root";
+
+// general styling
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/helpers";
+
+// Optional utilities API
+@import "bootstrap/scss/utilities/api";
+
+// Components
+@import 'bootstrap/scss/tables';
+@import 'bootstrap/scss/forms';
+@import 'bootstrap/scss/buttons';
+@import 'bootstrap/scss/dropdown';
