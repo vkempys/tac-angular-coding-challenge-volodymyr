@@ -1,12 +1,10 @@
 # Tac Angular Coding Challenge
 
-This is a blank Angular 14.x starter project to test potential developers.  It includes a simple api server for your angular application to consume and persist data from.
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.2.
+This is a blank Angular starter project to test potential developers.  It includes a simple api server for your angular application to consume and persist data from.
 
 ## Prerequisites
 
-- Installation of NodeJs 16.x
+- Installation of NodeJs 18.x
 - Git
 - Code Editor IDE (Visual Studio Code, Webstorm, etc...)
 
@@ -28,7 +26,3 @@ Run `npm run start:api` for the api server.  Navigate to [http://localhost:4500/
 - DELETE /people/1
 
 To learn more about the json server, visit [json-server](https://www.npmjs.com/package/json-server)
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to [http://localhost:4400/](http://localhost:4400/). The app will automatically reload if you change any of the source files.
