@@ -1,0 +1,24 @@
+<table class="table table-hover">
+  <caption class="invisible">People listing table</caption>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Registered</th>
+      <th scope="col">Status</th>
+      <th scope="col" class="actions-block-header"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let person of people; index as i; trackBy: trackBy">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ person.name }}</td>
+      <td>{{ person.registered | dateFormat }}</td>
+      <td>{{ person.isActive | activeFormat }}</td>
+      <td class="action-block-content">
+        <tac-nx-ppl-edit-link [person]="person"></tac-nx-ppl-edit-link>
+        <tac-nx-ppl-delete-button [name]="person.name" (delete)="deletePerson.emit(person.id)"></tac-nx-ppl-delete-button>
+      </td>
+    </tr>
+  </tbody>
+</table>

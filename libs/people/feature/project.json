@@ -3,7 +3,7 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
   "sourceRoot": "libs/people/feature/src",
-  "prefix": "tac-nx-angular-challenge",
+  "prefix": "tac-nx",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",

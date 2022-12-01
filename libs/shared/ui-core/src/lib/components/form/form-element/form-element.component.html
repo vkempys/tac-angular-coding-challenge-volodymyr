@@ -1,0 +1,20 @@
+<div [ngClass]="{
+  'needs-validation': hasErrors,
+  'd-flex': useHorizontalLayout
+}">
+  <div class="col">
+    <label [for]="labelForId">
+      <div class="text-capitalize text-truncate">
+        {{ label }}
+        <span *ngIf="required">*</span>
+      </div>
+    </label>
+  </div>
+  <div class="col">
+      <ng-content></ng-content>
+      <ng-container *ngIf="hasErrors">
+        <div class="err-message" *ngFor="let message of errorMessages">{{ message }}</div>
+      </ng-container>
+  </div>
+
+</div>

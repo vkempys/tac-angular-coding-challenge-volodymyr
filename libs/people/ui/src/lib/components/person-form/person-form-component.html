@@ -1,0 +1,48 @@
+<form [formGroup]="form" #personForm="ngForm" novalidate class="person-form">
+  <tac-nx-shrd-uic-form-element [label]="formKeys.NAME" [required]="true" class="d-block my-3">
+    <tac-nx-shrd-uic-input
+      [formControlName]="formKeys.NAME"
+      [name]="formKeys.NAME"
+      type="string"
+      placeholder="John Doe"
+      [maxlength]="formsConfig[formKeys.NAME].maxlength">
+    </tac-nx-shrd-uic-input>
+  </tac-nx-shrd-uic-form-element>
+  <tac-nx-shrd-uic-form-element [label]="formKeys.AGE" [required]="true" class="d-block my-3">
+    <tac-nx-shrd-uic-input
+      [formControlName]="formKeys.AGE"
+      [name]="formKeys.AGE"
+      type="number"
+      placeholder="33"
+      [min]="formsConfig[formKeys.AGE].min"
+      [max]="formsConfig[formKeys.AGE].max">
+    </tac-nx-shrd-uic-input>
+  </tac-nx-shrd-uic-form-element>
+  <tac-nx-shrd-uic-form-element [label]="formKeys.ACTIVE" class="d-block my-3">
+    <tac-nx-shrd-uic-checkbox [name]="formKeys.ACTIVE" [formControlName]="formKeys.ACTIVE"></tac-nx-shrd-uic-checkbox>
+  </tac-nx-shrd-uic-form-element>
+  <tac-nx-shrd-uic-form-element [label]="formKeys.ABOUT" class="d-block my-3">
+    <tac-nx-shrd-uic-textarea
+      [formControlName]="formKeys.ABOUT"
+      [name]="formKeys.ABOUT"
+      placeholder="Brief person information"
+      [maxlength]="formsConfig[formKeys.ABOUT].maxlength">
+    </tac-nx-shrd-uic-textarea>
+  </tac-nx-shrd-uic-form-element>
+  <tac-nx-shrd-uic-form-element [label]="formKeys.GENDER" [required]="true" class="d-block my-3">
+    <tac-nx-shrd-uic-select
+      [formControlName]="formKeys.GENDER"
+      [name]="formKeys.GENDER"
+      placeholder="Select gender"
+      [options]="formsConfig[formKeys.GENDER].options">
+    </tac-nx-shrd-uic-select>
+  </tac-nx-shrd-uic-form-element>
+  <div class="d-flex justify-content-between mt-5">
+    <button class="btn btn-outline-secondary w-25" (click)="onCancel()">
+      Cancel
+    </button>
+    <button class="btn btn-outline-primary w-25" (click)="onSubmit()">
+      {{ submitLabel }}
+    </button>
+  </div>
+</form>

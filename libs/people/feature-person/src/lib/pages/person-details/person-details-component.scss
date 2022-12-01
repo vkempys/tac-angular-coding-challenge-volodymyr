@@ -1,0 +1,15 @@
+@import 'ui-core-common';
+
+:host {
+  .container {
+    max-width: 700px;
+  }
+  .data-row {
+    align-items: center;
+    padding: 15px 5px;
+    border-bottom: 1px solid $text-border-color;
+  }
+  .btn {
+    min-width: 100px;
+  }
+}

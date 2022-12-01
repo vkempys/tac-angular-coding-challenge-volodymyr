@@ -1,0 +1,22 @@
+<input
+  #inputRef
+  type="hidden"
+  [formControl]="control"
+  [name]="name"
+  [id]="inputId"
+/>
+
+<div ngbDropdown class="d-inline-block">
+  <button type="button" class="btn btn-outline-dark text-capitalize" [id]="buttonId" ngbDropdownToggle>
+    {{ value || placeholder }}
+  </button>
+  <div ngbDropdownMenu [attr.aria-labelledby]="buttonId">
+    <button
+      class="text-capitalize form-control"
+      *ngFor="let option of options"
+      ngbDropdownItem
+      (click)="applySelection(option)">
+      {{ option }}
+    </button>
+  </div>
+</div>

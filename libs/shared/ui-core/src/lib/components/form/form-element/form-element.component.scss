@@ -1,0 +1,12 @@
+@import 'ui-core-common';
+
+.shrd-uic-form-element {
+  .err-message {
+    text-transform: capitalize;
+    color: $danger;
+    font-size: $text-font-small;
+  }
+  .needs-validation .form-control {
+    border-color: $danger;
+  }
+}

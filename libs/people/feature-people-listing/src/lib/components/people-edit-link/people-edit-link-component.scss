@@ -1,0 +1,8 @@
+@import 'ui-core-common';
+
+:host {
+  margin-right: 5px;
+  .person-edit-link {
+    color: $black;
+  }
+}

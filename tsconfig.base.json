@@ -7,6 +7,7 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
@@ -15,21 +16,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@tac-nx-angular-challenge/people/feature": [
-        "libs/people/feature/src/index.ts"
-      ],
-      "@tac-nx-angular-challenge/people/feature-landing-page": [
-        "libs/people/feature-landing-page/src/index.ts"
-      ],
-      "@tac-nx-angular-challenge/people/feature-person-page": [
-        "libs/people/feature-person-page/src/index.ts"
-      ],
-      "@tac-nx-angular-challenge/shared/ui-core": [
-        "libs/shared/ui-core/src/index.ts"
-      ],
-      "@tac-nx-angular-challenge/shared/util-core": [
-        "libs/shared/util-core/src/index.ts"
-      ]
+      "@tac/people/ui": ["libs/people/ui/src/index.ts"],
+      "@tac/people/data-access": ["libs/people/data-access/src/index.ts"],
+      "@tac/people/feature": ["libs/people/feature/src/index.ts"],
+      "@tac/people/feature-people-listing": ["libs/people/feature-people-listing/src/index.ts"],
+      "@tac/people/feature-person": ["libs/people/feature-person/src/index.ts"],
+      "@tac/shared/commmon-types": ["libs/shared/commmon-types/src/index.ts"],
+      "@tac/shared/ui-core": ["libs/shared/ui-core/src/index.ts"],
+      "@tac/shared/util-core": ["libs/shared/util-core/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

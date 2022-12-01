@@ -1,0 +1,12 @@
+@import 'ui-core-common';
+
+:host {
+  .actions-block-header {
+    width: $action-btn-width * 3;
+  }
+  .action-block-content {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+  }
+}

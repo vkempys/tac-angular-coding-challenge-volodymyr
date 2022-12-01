@@ -13,7 +13,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "tacNxAngularChallenge",
+            "prefix": "tacNx",
             "style": "camelCase"
           }
         ],
@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "tac-nx-angular-challenge",
+            "prefix": "tac-nx",
             "style": "kebab-case"
           }
         ]

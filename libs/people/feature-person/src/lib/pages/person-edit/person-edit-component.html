@@ -1,0 +1,11 @@
+<a class="btn btn-link person-edit-link" [routerLink]="['/', PeopleRoutes.BASE]">
+  Back
+</a>
+
+<tac-nx-ppl-ui-person-form
+  *ngIf="person"
+  submitLabel="Submit"
+  [person]="person"
+  (formSubmitted)="onFormSubmit($event)"
+  (formCanceled)="onFormCancel()"
+></tac-nx-ppl-ui-person-form>

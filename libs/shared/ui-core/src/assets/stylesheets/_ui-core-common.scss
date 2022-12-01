@@ -1,9 +1,7 @@
-@import './bootstrap/functions';
-@import './custom/functions';
+@import 'bootstrap/scss/functions';
 
 @import './custom/variables';
-@import './custom/mixins';
 
 @import 'bootstrap/scss/variables';
 @import 'bootstrap/scss/maps';
-@import './bootstrap/mixins';
+@import 'bootstrap/scss/mixins';
